@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/*
+To change this license header,choose License Headers in Project Propertes.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2023-11-08, 12:11:03
+    Author : Sebastian Krupa(Przemyslaw Kula)
+*/
+/* =====================================================================================================
+    normalize.css
+   2011-07-06T20:20 UTC
+   //github.com/jonathantneal/normalize.css
+
+   Normalize.css is a customisable CSS file that makes browsers render all
+   elements more consistently and in line with modern standards. We researched
+   the differences between default browser styles in order to precisely target
+   only the styles that need normalizing.
+
+   How comment documentation is written:
+   Comments: (anchor) (type of change) (summary of issue) in (affected browsers)
+   Url: (url related to above comment)
+
+   To be concise, comments are restricted to a length of 77 characters or less.
+
+   What 'types of change' mean:
+   Addresses: Changes involving downgrades for greater cross-browser consistency
+   Corrects: Bug fixes and corrections to unexpected visual quirks
+   Improves: Improvements based on popular usage and html5 recommendation
+   ========================================================================== */
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure, 
+ footer,
+ header,
+ hgroup,
+ nav,
+ section{
+    display: block;}
+
+/*
+* 1. Improves visual focus of mouse in all browsers
+* 2. Correct text resizing oddly when font size is set using ems in IE6/7
+*    http://clagnut.com/blog/348/#c790
+* 3. Corrects page centering in all browsers regergless of content height
+* 4. Improves visual appearance of containers during  a delegat click in mSaf
+*    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+* 5. Corrects text resizing oddly after orientation change in all handhelds
+*    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+*/
+html {
+    cursor: default;
+    /* 1 */
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-tap-highlight-color: transparent;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body,
+form,
+input,
+button,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;}
+
+a,
+a:active,
+a:hover {
+    outline: none;}
+
+a:focus {
+    outline: thin dotted;}
+
+abbr[title] {
+    border-bottom: 1px dotted;}
+
+b, 
+strong {
+    font-weight: bold;}
+
+dfn {
+    font-style: italic;}
+
+mark {
+    background: #FF0;
+    color: #000;}
+
+pre,
+code,
+kbd,
+samp{
+    font-family: monospace, monospace;
+    _font-family: 'courier new' , monospace;
+    font-size: 1em;}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;}
+
+q {
+    quotes: none;}
+
+q:before,
+q:after {
+    content: '';
+    content: none;}
+
+small,
+sub,
+sup {
+    font-size: 75%;}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;}
+
+sup {
+    top: -0.5em;}
+
+sub {
+    bottom: -0.25em;}
+
+nav ul {
+    list-style-type: none;}
+
+audio[controls],
+canvas,
+video {
+    display: inline-block;
+    *display: inline;}
+
+audio {
+    display: none;
+    *zoom: 1;}
+
+audio[controls] {
+    display: inline-block;}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;}
+
+svg:not(:root) {
+    overflow: hidden;}
+
+legend {
+    *margin-left: -7px; }
+
+button,
+input, 
+select,
+textarea {
+    border-radius: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;}
+
+button, 
+input[type="button"]
+input[type="reset"]
+input[tyle="submit"] {
+    overflow: visible;}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;}
+
+#cookierBar {
+    position: relative;
+    background: #141414;
+    color: white;
+    display: block;}
+    #cookierBar .body {
+        position: relative;
+        padding: 10px 50px 10px 10px;}
+        #cookierBar .body .cookie_content p {
+            margin: 5px 0;
+            display: block;}
+        #cookierBar .body .cookie_content .big {
+            font-weight: 900;
+            letter-spacing: 1.1px;
+            font-size: 13px;}
+        #cookierBar .body .cookie_content .small {
+            font-size: 12px;
+            word-spacing: -0.6px;}
+        #cookierBar .body .cookie_content a {
+            text-decoration: none;
+            color: #ffb72b;}
+        #cookierBar .body #cookierBarClose {
+            position: absolute;
+            top: 10px;
+            right: 1px;
+            font-size: 36px;
+            cursor: pointer;
+            color: #cccccc;}
+            #cookieBar .body #cookieBarClose:hover {
+                color: white;}
+
+@media print {
+    #cookierBar {
+        display: none;}}
+#galleryBackground {
+    z-index: 9999999;
+    position: fixed;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;}
+    #galleryBackground #galleryNext::before {
+        font-size: 60px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        text-align: center;
+        margin: -30px 0 0 0;}
+    #galleryBackground #galleryPrev {
+        left: 0;
+        min-width: 60px;
+        min-height: 72px;
+        cursor: pointer;}
+        #galleryBackground #galleryPrev::before {
+            font-size: 60px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            text-align: center;
+            margin: -30px 0 0 0;}
+        #galleryBackground #galleryNext, #galleryBackground #galleryPrev {
+            position: fixed;
+            top: 50%;
+            height: 100%;
+            width: 200px;
+            max-width: 25vw;
+            background-repeat: no-repeat;
+            text-align: center;
+            z-index: 30;
+            -webkit-transition: all 200ms ease;
+                    transition: all 200ms ease;}
+            #galleryBackground #galleryNext:hover, #galleryBackground #galleryPrev:hover {
+                background: rgba(0, 0, 0, 0.2);}
+                #galleryBackground #galleryNext:hover::before, #galleryBackground #galleryPrev:hover::before {
+                    color: white;}
+        #galleryBackground .galleryUpPanel {
+            z-index: 35;
+            background: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;}
+            #galleryBackground .galleryUpPanel #galleryX {
+                width: 80px;
+                padding: 20px 10px;
+                float: right;
+                cursor: pointer;}
+                #galleryBackground .galleryUpPanel #galleryX::before {
+                    font-size: 40px;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: block;
+                    color: #fff;}
+                #galleryBackground .galleryUpPanel #galleryX:hover::before {
+                    color: #white;}
+            #galleryBackground .galleryUpPanel #galleryFullSize {
+                width: 80px;
+                padding: 20px 10px;
+                display: block;
+                float: left;
+                cursor: pointer;}
+                #galleryBackground .galleryUpPanel #galleryFullSize::before {
+                    font-size: 40px;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: block;
+                    color: #fff;}
+                #galleryBackground .galleryUpPanel #galleryFullSize:hover::before {
+                    color: white;}
+            #galleryBackground .galleryUpPanel #galleryDownload {
+                width: 80px;
+                padding: 20px 10px;
+                display: block;
+                float: left;
+                cursor: pointer;}
+                #galleryBackground .galleryUpPanel #galleryDownloand::before {
+                    font-size: 40px;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: block;
+                    color: #fff;}
+            #galleryBackground .galleryUpPanel #galleryDownloand:hover::before {
+                color: white;}
+    #galleryBackground #galleryThuminals {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        z-index: 40;}
+        #galleryBackground #galleryThumbinals .galleryThumbinal {
+            background: #000;
+            -webkit-transition: margin 300ms ease-out;
+                    transition: margin 300ms ease-out;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 120px;
+            height: 90px;
+            border: 1px solid #000;
+            overflow: hidden;
+            margin: 5px 10px;
+            cursor: pointer;}
+            #galleryBackground #galleryThumbinals .galleryThumbimal img {
+                width: 120px;
+                height: 90px;
+                object-fit: cover;
+                opacity: .4;
+                -webkit-transition: all 200ms ease;
+                        transition: all 200ms ease;}
+            #galleryBackground #galleryThumbinals .galleryThumbimal:hover img {
+                opacity: 1;}
+            #galleryBackground #galleryThumbinals .galleryThumbimal.active img {
+                opacity: 1;}
+    #galleryBackground #galleryBackgroundClick {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;}
+    #galleryBackground .galleryImg {
+        background: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        opacity: 0;
+        box-sizing: border-box;
+        width: 120px;
+        height: 120px;
+        height: 120px;
+        -webkit-transition: width 300ms ease-out, height 300ms ease-out, -webkit-transform 300ms ease-in-out;
+                transition: width 300ms ease-out, height 300ms ease-out, transform 300ms ease-in-out;
+        overflow: hidden;
+        visibility: collapse;}
+                
