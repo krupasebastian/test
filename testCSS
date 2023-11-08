@@ -1694,3 +1694,806 @@ body,html {
     background: #fbfcfd
 }
 
+body .main,html .mainBg {
+    position: absolute;
+    z-index: 0;
+    background: url(/gfx/Herb_Polski_orzelSiwy.svg) 0 0 no-repeat;
+    background-size: contain;
+    width: 80vw;
+    height: 87vh;
+    top: 39px;
+    left: 8vw;
+    opacity: .25;
+}
+
+.body {
+    max-width: 98%;
+    width: 1060px;
+    margin: auto;
+}
+
+.focusable:focus,a:active,a:focus,button:active,button:focus,input:focus,textarea:focus {
+    outline: 2px solid orange!important;
+}
+
+input,select,textarea {
+    border: 1px solid#cfcfcf;
+}
+
+.contrast body {
+    background: #000;
+    color: #ff0;
+}
+
+.contrast .not_contrast,.standard .not_standard,.text .not_text {
+    display: none!important;
+}
+
+.light-bg {
+    background: #e9edef;
+    color: #202020;
+}
+
+.white-bg {
+    background: #fff;
+    color: initial;
+}
+
+.dark-bg {
+    background: #364150;
+    color: fff;
+}
+
+.accent-bg {
+    background: #26385f;
+    color: #fff;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-18 {
+    font-size: 18px
+}
+
+.font-15 {
+    font-size: 15px
+}
+
+.font-14 {
+    font-size: 14px
+}
+
+.font-13 {
+    font-size: 13px
+}
+
+.font-11 {
+    font-size: 11px
+}
+
+.font-10 {
+    font-size: 10px
+}
+
+.menuTitle,.title {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 7px 16px;
+    border-left: 4px solid #c00000;
+    margin: 0;
+}
+
+.right {
+    float: right;
+}
+
+body.mediumFont {
+    font-size: 15px;
+}
+
+body.mediumFont .font-20 {
+    font-size: 30px
+}
+
+body.mediumFont .font-18 {
+    font-size: 27px
+}
+
+body.mediumFont .font-15 {
+    font-size: 22px
+}
+
+body.mediumFont .font-14 {
+    font-size: 21px
+}
+
+body.mediumFont .font-13 {
+    font-size: 18px
+}
+
+body.mediumFont .font-11 {
+    font-size: 16px
+}
+
+body.mediumFont .font-10 {
+    font-size: 15px
+}
+
+body.mediumFont .mediumHidden {
+    display: none
+}
+
+body.bigFont {
+    font-size: 20px
+}
+
+body.bigFont .font-20 {
+    font-size: 40px
+}
+
+body.bigFont .font-18 {
+    font-size: 36px
+}
+
+body.bigFont .font-15 {
+    font-size: 30px
+}
+
+body.bigFont .font-14 {
+    font-size: 28px
+}
+
+body.bigFont .font-13 {
+    font-size: 26px
+}
+
+body.bigFont .font-11 {
+    font-size: 22px
+}
+
+body.bigFont .font-10 {
+    font-size: 20px
+}
+
+.mobileBigMenu,body.bigFont .bigHidden {
+    display: none
+}
+
+.mobileHeader {
+    display: none;
+    background: #e9edef;
+    border-bottom: 2px solid #c00000
+}
+
+ul.siteMap {
+    padding-top: 16px
+}
+
+ul.siteMap,ul.siteMap ul {
+    padding-left: 1.5em;
+    list-style: none
+}
+
+ul.siteMap li,ul.siteMap ul li {
+    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-left: 14px;
+    display: block;
+    position: relative
+}
+
+ul.siteMap li a,ul.siteMap ul li a {
+    text-decoration: none;
+    color: #364150
+}
+
+ul.siteMap li:before,ul.siteMap ul li:before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-right: 2px solid #c00000;
+    border-bottom: 2px solid #c00000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top: 7px
+}
+
+.mobile {
+    display: none
+}
+
+@media (max-width: 1085px) {
+    div.head-title {
+        width:100%
+    }
+
+    .body {
+        width: 98%
+    }
+}
+
+@media (max-width: 1000px) {
+    body,html {
+        font-size:12px
+    }
+
+    .font-20 {
+        font-size: 18px
+    }
+
+    .font-15 {
+        font-size: 14px
+    }
+
+    .font-14 {
+        font-size: 13px
+    }
+
+    .font-13 {
+        font-size: 12px
+    }
+
+    .font-11 {
+        font-size: 10px
+    }
+
+    .font-10 {
+        font-size: 9px
+    }
+
+    body.bigFont {
+        font-size: 15px
+    }
+
+    body.bigFont .font-20 {
+        font-size: 22px
+    }
+
+    body.bigFont .font-15 {
+        font-size: 17px
+    }
+
+    body.bigFont .font-14 {
+        font-size: 16px
+    }
+
+    body.bigFont .font-13 {
+        font-size: 15px
+    }
+
+    body.bigFont .font-11 {
+        font-size: 13px
+    }
+
+    body.bigFont .font-10 {
+        font-size: 12px
+    }
+
+    div.head-title {
+        padding: 0 10px;
+        box-sizing: border-box
+    }
+
+    div.head-title .logoBip {
+        padding-right: 5px;
+        background-size: 96%
+    }
+
+    div.head-title .logoBip a {
+        min-width: 80px
+    }
+
+    div.head-title p {
+        font-size: 15px;
+        padding: 0 5px
+    }
+
+    div.head-title .form-container form {
+        width: 330px
+    }
+
+    div.head-title .link-page {
+        display: none
+    }
+
+    div.head-title a img {
+        padding-left: 5px
+    }
+}
+
+@media (max-width: 950px) {
+    body {
+        padding-top: 48px;
+    }
+
+    .banner li.banner_2,.banner li.banner_5 {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 977;
+    }
+
+    header .siteAdjustment {
+        display: none;
+    }
+
+    header .mobileHeader {
+        display: block;
+        position: relative;
+        padding: 4px 6px;
+    }
+
+    header .mobileHeader div {
+        height: 30px;
+        width: 30px;
+        font-size: 23px;
+        padding: 0 3px;
+    }
+
+    header .mobileHeader div.right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        display: block;
+        width: auto;
+        padding: 0;
+    }
+
+    header .mobileHeader div.right>* {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        width: auto;
+    }
+
+    header .mobileHeader div.right .searchButton {
+        padding: 4px 7px;
+    }
+
+    header .mobileHeader div.right .logout {
+        background: #c00000;
+        padding: 0 16px;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 38px;
+    }
+
+    header .mobileHeader div i {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    div.head-title p a {
+        font-size: 20px;
+    }
+
+    .mainMenu {
+        background: #e9edef;
+        z-index: 998;
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 48px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        margin: 0;
+        max-width: 100%;
+        transition: max-height .5s,top 0s .5s;
+        max-height: 0;
+        border: none;
+        top: -3px;
+        border-bottom: 3px solid #c00000!important;
+        overflow: auto;
+    }
+
+    .mainMenu.opened {
+        transition: max-height .5s,top 0s 0s;
+        top: 40px;
+        z-index: 999;
+        max-height: 600px;
+        max-height: 90vh;
+    }
+
+    .mainMenu ul {
+        display: block;
+    }
+
+    .mainMenu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .mainMenu ul li a {
+        text-align: left;
+    }
+    
+    .contentContainer {
+        display: block;
+    }
+
+    .contentContainer>* {
+        display: block!important;
+    }
+
+    .contentContainer>nav {
+        display: block;
+        margin: 40px auto;
+        width: 80%;
+        min-width: 300px;
+        padding-right: 0;
+    }
+
+    .contentContainer>.content {
+        display: block;
+        padding: 0;
+    }
+
+    div.head-title .logoBip {
+        width: 167px;
+    }
+
+    div.head-title .logoBip img {
+        margin-left: 0;
+    }
+
+    .search-box {
+        z-index: 998;
+        position: fixed;
+        left: 0;
+        background: #e9edef;
+        right: 0;
+        overflow: hidden;
+        transition: height .3s,top 0s .3s;
+        height: 0;
+        top: -3px;
+        border-bottom: 2px solid #c00000;
+    }
+
+    .search-box.opened {
+        transition: height .3s,top 0s 0s;
+        top: 40px;
+        border-color: #c00000;
+        z-index: 999;
+        height: 59px;
+    }
+
+    .search-box form {
+        display: table;
+        margin: 10px auto;
+    }
+
+    .search-box form input {
+        line-height: 37px;
+        height: 39px;
+        padding: 0 10px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        width: 260px;
+        width: 80vw;
+    }
+
+    .search-box form button {
+        width: 59px;
+        max-width: 16%;
+        height: 39px;
+        border: none;
+        background: #c00000;
+        color: #fff;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    nav.asideMenu {
+        width: auto;
+        text-align: center;
+    }
+
+    .bigMenu li {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    .bigMenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .bigMenu.mobileBigMenu {
+        display: block!important;
+    }
+}
+
+@media (max-width: 950px) {
+    .content{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .content {
+        padding-left:0
+    }
+}
+
+@media (max-width: 750px) {
+    form.search .dates>* {
+        display:block
+    }
+
+    form.search .dates>div {
+        padding-bottom: 16px
+    }
+
+    form.search .sort>* {
+        display: block
+    }
+
+    .searchTabsHeader li {
+        width: 100%;
+        margin: 0!important
+    }
+}
+
+@media (max-width: 700px) {
+    div.head-title .siteTitle>div .image {
+        display:none
+    }
+
+    article .attachementsList li .attachement>* {
+        display: block;
+        margin-top: 12px
+    }
+
+    article .attachementsList li .attachement>*>div {
+        display: block
+    }
+
+    article .attachementsList li .attachement>* .attachementName {
+        margin-top: 2px
+    }
+
+    article .attachementsList li .attachement>* .attachementInfo {
+        display: block;
+        margin: 6px 11px -10px auto
+    }
+
+    article .attachementsList li .attachement>* .attachementButtons {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 13px
+    }
+
+    article .attachementsList li .attachmentFullInfo {
+        padding-left: 0
+    }
+
+    :not(html.print) table.info_table.padding thead,:not(html.print) table.info_table thead {
+        display: none
+    }
+
+    :not(html.print) table.info_table.padding tr td,:not(html.print) table.info_table tr td {
+        display: block;
+        padding: 2px 5px 2px 59px
+    }
+
+    :not(html.print) table.info_table.padding tr td:first-of-type,:not(html.print) table.info_table tr td:first-of-type {
+        font-weight: 900;
+        padding-bottom: 0;
+        padding-top: 10px
+    }
+
+    :not(html.print) table.info_table.padding tr,:not(html.print) table.info_table tr {
+        padding-bottom: 16px;
+        display: block
+    }
+
+    :not(html.print) table.info_table.padding tr .previewIco,:not(html.print) table.info_table tr .previewIco {
+        display: none
+    }
+
+    :not(html.print) table.info_table.padding tr td:before,:not(html.print) table.info_table tr td:before {
+        content: "";
+        font-weight: 900;
+        padding-bottom: 0;
+        display: block;
+        color: #364150
+    }
+
+    :not(html.print) table.info_table.padding tr .stamp:before,:not(html.print) table.info_table tr .stamp:before {
+        content: "Czas"
+    }
+
+    :not(html.print) table.info_table.padding tr .historyEditor:before,:not(html.print) table.info_table tr .historyEditor:before {
+        content: "Dane osoby zmieniaj\105   cej"
+    }
+
+    :not(html.print) table.info_table.padding tr .description:before,:not(html.print) table.info_table tr .description:before {
+        content: "Opis zmiany"
+    }
+
+    article .article_buttons {
+        float: none;
+        text-align: right
+    }
+}
+
+@media (max-width: 520px) {
+    .head-title>* {
+        display:block!important
+    }
+}
+
+@media (max-width: 480px) {
+    .banner li.banner_1 {
+        display:none
+    }
+}
+
+@media print {
+    .light-bg,body,html {
+        background: #fff
+    }
+
+    header {
+        display: none
+    }
+
+    div.head-title .logoBip {
+        width: 145px
+    }
+
+    div.head-title .subtitle {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto
+    }
+
+    div.breadcrumb,div.head-title .form-container,div.head-title .link-page {
+        display: none
+    }
+
+    .contentContainer>nav,nav {
+        display: none!important
+    }
+
+    .body {
+        width: auto;
+        background: #fff
+    }
+
+    .attachements .attachementButtons,.banner {
+        display: none
+    }
+
+    .attachements .attachementsList li a {
+        padding: 0;
+        font-size: 12px
+    }
+
+    table.info_table.padding tr td,table.info_table.padding tr th {
+        font-size: 12px
+    }
+
+    .article_buttons,.article_history {
+        display: none
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit
+    }
+
+    .downloadArticle {
+        display: none
+    }
+
+    .zwijalne>h2,.zwijalne>h3 {
+        font-size: 13px
+    }
+
+    .zwijalne>h2>.icon-angle-down,.zwijalne>h3>.icon-angle-down {
+        display: none
+    }
+
+    .contentContainer,.contentContainer>.content,.zwijalne>div {
+        display: block
+    }
+
+    .bigMenu,footer {
+        display: none
+    }
+}
+
+.print .light-bg,.print body,.print html {
+    background: #fff
+}
+
+.print header {
+    display: none
+}
+
+.print div.head-title .logoBip {
+    width: 145px
+}
+
+.print div.head-title .subtitle {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto
+}
+
+.print div.breadcrumb,.print div.head-title .form-container,.print div.head-title .link-page {
+    display: none
+}
+
+.print .contentContainer>nav,.print nav {
+    display: none!important
+}
+
+.print .body {
+    width: auto;
+    background: #fff
+}
+
+.print .attachements .attachementButtons,.print .banner {
+    display: none
+}
+
+.print .attachements .attachementsList li a {
+    padding: 0;
+    font-size: 12px
+}
+
+.print table.info_table.padding tr td,.print table.info_table.padding tr th {
+    font-size: 12px
+}
+
+.print .article_buttons,.print .article_history {
+    display: none
+}
+
+.print a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+.print .downloadArticle {
+    display: none
+}
+
+.print .zwijalne>h2,.print .zwijalne>h3 {
+    font-size: 13px
+}
+
+.print .zwijalne>h2>.icon-angle-down,.print .zwijalne>h3>.icon-angle-down {
+    display: none
+}
+
+.print .contentContainer,.print .contentContainer>.content,.print .zwijalne>div {
+    display: block
+}
+
+.print .bigMenu,.print footer {
+    display: none
+}
+
+.contrast nav.asideMenu div>ul .openable>ul>li.active>a,.contrast nav.asideMenu div>ul .openable>ul>li.open>a,.contrast nav.asideMenu div>ul .openable>ul>li.openable ul a,.contrast nav.asideMenu div>ul .openable>ul>li>a {
+    background: #000!important
+}
