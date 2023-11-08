@@ -946,3 +946,751 @@ nav.asideMenu div .menuTitle {
     color: #fff;
     font-weight: 400;
 }
+
+nav.asideMenu div ul {
+    max-width: 100%;
+}
+
+nav.asideMenu div ul li.light-bg {
+    margin: 0;
+    padding: 0;
+}
+
+nav.asideMenu div>ul {
+    padding-top: 10px;
+}
+
+nav.asideMenu div>ul>li,nav.asideMenu div>ul>li a {
+    display: block;
+    position: relative;
+}
+
+nav.asideMenu div>ul>li a {
+    color: #202020;
+    text-decoration: none;
+    margin: 0 6px;
+    padding: 13px 15px 12px 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #cfcfcf;
+    background: inherit;
+    transition: background .1s,margin .1s,padding-left .1s,padding-right .1s;
+    overflow: hidden;
+}
+
+nav.asideMenu div>ul>li a i {
+    display: block;
+    position: absolute;
+    right: -14px;
+    color: #c00000;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 28px;
+    font-weight: 100;
+    transition: transform .3s,right .1s;
+    transform: rotate(-90deg);
+}
+
+nav.asideMenu div>ul>li:last-child a {
+    border-bottom: 1px solid transparent;
+}
+
+nav.asideMenu div>ul>li.active>a,nav.asideMenu div>ul>li.open>a,nav.asideMenu div>ul>li:focus>a,nav.asideMenu div>ul>li:hover>a {
+    color: #fff;
+    border-bottom: none;
+    background: #c00000;
+    margin: 0;
+    padding: 13px 21px 13px 16px;
+}
+
+nav.asideMenu div>ul>li.active>a i,nav.asideMenu div>ul>li.open>a i,nav.asideMenu div>ul>li:focus>a i,nav.asideMenu div>ul>li:hover>a i {
+    color: #fff;
+    right: 0;
+}
+
+nav.asideMenu div>ul>.openable>ul>li:last-of-type>a {
+    border-bottom: none;
+}
+
+nav.asideMenu div>ul .openable>ul {
+    overflow: hidden;
+    max-height: 0;
+    background: #fff;
+    transition: max-height .5s;
+    padding-left: 0;
+}
+
+nav.asideMenu div>ul .openable>ul.active,nav.asideMenu div>ul .openable>ul.open {
+    max-height: 1000px;
+}
+
+nav.asideMenu div>ul .openable>ul>li {
+    display: block;
+}
+
+nav.asideMenu div>ul .openable>ul>li>a {
+    font-weight: 400;
+}
+
+nav.asideMenu div>ul .openable>ul>li>a:hover {
+    color: #c00000;
+}
+
+nav.asideMenu div>ul .openable>ul>li.active>a,nav.asideMenu div>ul .openable>ul>li.open>a {
+    color: #c00000;
+    font-weight: 600;
+}
+
+nav.asideMenu div>ul .openable>ul>li.openable ul {
+    background: #f1f5f8;
+}
+
+nav.asideMenu div>ul .openable>ul>li.openable ul a {
+    padding-left: 30px;
+}
+
+nav.asideMenu div>ul .openable.active a i,nav.asideMenu div>ul .openable.open a i {
+    transform: rotate(0);
+}
+
+nav.asideMenu div>ul .openable.active.openable a:after,nav.asideMenu div>ul .openable.open.openable a:after,nav.asideMenu div>ul .openable:focus.openable a:after,nav.asideMenu div>ul .openable:hover.openable a:after {
+    color: #fff;
+}
+
+nav.asideMenu div>ul .openable.active.openable a:after,nav.asideMenu div>ul .openable.open.openable a:after,nav.asideMenu div>ul .openable a:focus.openable a:after {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: #fff;
+    top: 24px;
+    right: 18px;
+}
+
+nav.asideMenu div>ul .openable.active>ul,nav.asideMenu div>ul .openable.open>ul,nav.asideMenu div>ul .openable a:focus>ul {
+    max-height: 1000px;
+}
+
+.bigMenu {
+    padding: 0;
+    text-align: center;
+}
+
+.bigMenu li {
+    margin: 10px 0;
+}
+
+.bigMenu li img {
+    display: block;
+    width: 100%;
+}
+
+.contrast nav.asideMenu div>ul>li.active>a,.contrast nav.asideMenu div>ul>li.open>a,.contrast nav.asideMenu div>ul>li:hover>a,.contrast nav.asideMenu div>ul>li a:focus {
+    background: #ff0;
+    color: #000!important;
+}
+
+.contrast nav.asideMenu div>ul>li.active>a *,.contrast nav.asideMenu div>ul>li.open>a *,.contrast nav.asideMenu div>ul>li:hover>a *,.contrast nav.asideMenu div>ul>li a:focus * {
+    color: #000!important;
+}
+
+.contrast nav.asideMenu div>ul>li:after {
+    color: #fff;
+}
+
+.contrast nav.asideMenu div>ul>li:hover:after {
+    color: #000!important;
+}
+
+.contrast nav.asideMenu div>ul>li.active:after,.contrast nav.asideMenu div>ul>li.open:after {
+    background: #000;
+}
+
+.editor_only {
+    display: none!important;
+}
+
+article {
+    padding: 15px;
+    background: #fff;
+}
+
+article .article_buttons {
+    float: right;
+}
+
+article .article_buttons>* {
+    display: inline-block;
+    color: #252525;
+    margin: 2px;
+    padding: 3px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+article .article_buttons>:focus,article .article_buttons>:hover {
+    background: #c00000;
+    color: #fff;
+}
+
+article .title {
+    clear: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #364150;
+    border-left: none;
+}
+
+article table tbody tr:nth-child(odd) {
+    background: #e9edef;
+}
+
+article table thead>tr {
+    background: #c6d0d5;
+}
+
+article .attachementsList {
+    list-style: none;
+    padding: 0;
+    margin: 4px;
+}
+
+article .attachementsList li {
+    margin-bottom: 3px;
+}
+
+article .attachementsList li .attachement {
+    display: table;
+    width: 100%;
+}
+
+article .attachementsList li .attachement>* {
+    text-decoration: none;
+    padding: 6px 9px 6px 0;
+    display: table-cell;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+article .attachementsList li .attachement>* .icon {
+    width: 46px;
+    height: 31px;
+    background: url("/gfx/icons/default.png") 2px 2px no-repeat;
+    background-size: 24px;
+    vertical-align: middle;
+}
+
+article .attachementsList li .attachement>* .icon.jpeg,article .attachementsList li .attachement>* .icon.jpg,article .attachementsList li .attachement>* .icon.png {
+    background-image: url("gfx/icons/img.png");
+}
+
+article .attachementsList li .attachement>* .icon.pdf {
+    background-image: url("/gfx/icons/doc.png");
+}
+
+article .attachementsList li .attachement>* .icon.doc,article .attachementsList li .attachement>* .icon.docx,article .attachementsList li .attachement>* .icon.odt {
+    background-image: url("/gfx/icons/doc.png");
+}
+
+article .attachementsList li .attachement>* .icon.ods,article .attachementsList li .attachement>* .icon.xls,article .attachementsList li .attachement>* .icon.xlsx {
+    background-image: url("/gfx/icons/xls.png");
+}
+
+article .attachementsList li .attachement>* .icon.odp,article .attachementsList li .attachement>* .icon.ppt,article .attachementsList li .attachement>* .icon.pptx {
+    background-image: url("/gfx/icons/ppt.png");
+}
+
+article .attachementsList li .attachement>* .icon.zip {
+    background-image: url("/gfx/icons.zip.png");
+}
+
+article .attachementsList li .attachement>* .icon.article-list_right {
+    background-image: url("/gfx/icons/rar.png");
+}
+
+article .attachementsList li .attachement>* .icon.htm,article .attachementsList li .attachement>* .icon.html,article .attachementsList li .attachement>* .icon.mht,article .attachementsList li .attachement>* .icon.xhtm,article .attachementsList li .attachement>* .icon.xhtml {
+    background-image: url("/gfx/icons/html.png");
+}
+
+article .attachementsList li .attachement>*>div {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+}
+
+article .attachementsList li .attachement>*>div>* {
+    display: table-cell;
+    VERTICAL-ALIGN: MIDDLE;
+}
+
+article .attachementsList li .attachement>* a {
+    text-decoration: none;
+}
+
+article .attachementsList li .attachement>* a {
+    text-decoration: none;
+}
+
+article .attachementsList li .attachement>* .attachementName {
+    color: #364150;
+    width: auto;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+article .attachementsList li .attachement>* .attachementInfo {
+    color: initial;
+    padding-right: 11px;
+    margin-top: -9px;
+    white-space: nowrap;
+    width: 60px;
+}
+
+article .attachementsList li .attachement>* .attachementButtons {
+    width: 132px;
+    white-space: nowrap;
+}
+
+article .attachementsList li .attachement>* .showAttachmentFullInfo {
+    display: inline-block;
+    color: #959696;
+    width: 33px;
+    height: 20px;
+    font-size: 21px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: MIDDLE;
+}
+
+article .attachementsList li .attachement>* .attachmentDownload {
+    display: inline-block;
+    background: #4d7ab4;
+    color: #fff;
+    width: 86px;
+    height: 30px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+article .attachementsList li .attachement>* .attachmentDownload:hover {
+    background: #5f87bc;
+}
+
+article .attachementsList li .attachement>* .attachmentDownload i {
+    margin-top: 4px;
+}
+
+article .attachementsList li .attachement>a {
+    padding: 6px 0 6px 9px;
+}
+
+.no-js article .attachementsList li .attachementFullInfo {
+    display: none;
+    padding-bottom: 16px;
+    padding-left: 44px;
+}
+
+.no-js article .attachementsList li .attachmentFullInfo,article .attachementsList li.open .attachmentFullInfo {
+    display: block;
+}
+
+article .linked {
+    padding: 0 6px 6px;
+}
+
+article .linked .article-list>:nth-child(odd) {
+    background-color: #fbfcfd;
+}
+
+.gallery h4 {
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.gallery ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+}
+
+.gallery ul li {
+    display: inline-block;
+    width: 15.6%;
+    margin: .4%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding-bottom: 15.6%;
+    overflow: hidden;
+    position: relative;
+    min-width: 80px;
+    min-width: 80px;
+    transition: transform .1s;
+}
+
+.gallery ul li img {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    max-width: none;
+    left: 50%;
+    height: 100%;
+}
+
+.gallery ul li:hover {
+    transform: scale(1.1);
+}
+
+.contrast article table tbody tr:nth-child(odd) {
+    background: #111;
+}
+
+.contrast article table thead>tr {
+    background: #000;
+}
+
+footer {
+    padding-top: 40px;
+    position: relative;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+footer .footerMenu ul {
+    text-align: right;
+    padding: 0 10px;
+    margin: 0;
+}
+
+footer .footerMenu ul li {
+    display: inline-block;
+}
+
+footer .footerMenu ul li a {
+    display: block;
+    padding: 0 16px;
+    line-height: 72px;
+}
+
+footer .shortcuts {
+    text-align: center;
+}
+
+footer .shortcuts ul {
+    list-style: none;
+}
+
+footer .shortcuts ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .shortcuts ul li a {
+    display: block;
+    padding: 10px;
+    height: 54px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+footer .shortcuts ul li a img {
+    max-height: 100%;
+    display: block;
+}
+
+footer .bottom {
+    line-height: 42px;
+}
+
+footer .bottom .validator0k {
+    height: 20px;
+    filter: grayscale(1);
+    margin: 5px 6px 6px;
+    vertical-align: middle;
+    transition: filter .3s;
+}
+
+footer .bottom .validator0k:hover {
+    filter: none;
+}
+
+footer .bottom a {
+    float: right;
+    display: block;
+}
+
+footer .bottom .body {
+    border-top: 1px solid #cfcfcf;
+}
+
+footer .bottom .dh-link {
+    width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 12px;
+}
+
+footer .bottom .dh-link img {
+    display: block;
+}
+
+.searchTabsHeader li:focus,.searchTabsHeader li:hover {
+    background: #e1bebf;
+}
+
+.searchTabsHeader li.open {
+    background: #c00000;
+    color: #fff;
+}
+
+form.protectedCategory {
+    display: inline-block;
+}
+
+form.protectedCategory p {
+    margin-top: 0;
+}
+
+form.protectedCategory .inputContainer {
+    margin-top: 30px;
+}
+
+form.protectedCategory .inputContainer input {
+    line-height: 40px;
+    height: 40px;
+    width: 250px;
+    margin-left: 20px;
+}
+
+form.protectedCategory .errorContainer {
+    text-align: right;
+    margin-top: 4px;
+    color: #c00000;
+    font-size: 12px;
+    min-height: 15px;
+    margin-bottom: 5px;
+}
+
+form.protectedCategory button {
+    border: none;
+    padding: 12px 55px;
+    float: right;
+}
+
+@font-face {
+    font-family: metrocms;
+    src: url("fonts/fontello/metrocms.eto?39254238");
+    src: url("/fonts/fontello/metrocms.eot?39254238#iefix") format("embedded-opentype"),url("/fonts/fontello/metrocms.woff2?39254238") format("woff2"),url("/fonts/fontello/metrocms.woff?39254238") format("woff"),url("/fonts/fontello/metrocms.ttf?39254238") format("truetype"),url("/fonts/fontello/metrocms.svg?39254238#metrocms") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+[class*=" icon-"]:before,[class^=icon-]:before {
+    font-family: metrocms;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+}
+
+.icon-ajust:before {
+    content: "\E800";
+}
+
+.icon-search:before {
+    content: "\E802"
+}
+
+.icon-txt:before {
+    content: "\E803"
+}
+
+.icon-map:before {
+    content: "\E804"
+}
+
+.icon-mainpage:before {
+    content: "\E805"
+}
+
+.icon-menu:before {
+    content: "\E806"
+}
+
+.icon-cancel-circled:before {
+    content: "\E807"
+}
+
+.icon-angle-double-left:before {
+    content: "\E808"
+}
+
+.icon-angle-double-right:before {
+    content: "\E809"
+}
+
+.icon-print:before {
+    content: "\E80A"
+}
+
+.icon-code:before {
+    content: "\E80B"
+}
+
+.icon-doc-inv:before {
+    content: "\E80C"
+}
+
+.icon-forward:before {
+    content: "\E80D"
+}
+
+.icon-angle-down:before {
+    content: "\E80E"
+}
+
+.icon-info:before {
+    content: "\E80F"
+}
+
+.icon-download:before {
+    content: "\E810"
+}
+
+.icon-eye:before {
+    content: "\E811"
+}
+
+.icon-calendar:before {
+    content: "\E812"
+}
+
+.icon-arrow-right:before {
+    content: "\E813"
+}
+
+.icon-arrow-left:before {
+    content: "\E814"
+}
+
+.icon-home:before {
+    content: "\E815"
+}
+
+.icon-rss-squared:before {
+    content: "\F143"
+}
+
+.icon-volume:before {
+    content: "\E816"
+}
+
+body.no-js .openable a:focus {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 0 9px 0 #000;
+}
+
+body.no-js .focusMenu a:focus {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    width: auto;
+    color: #000;
+    padding: 10px;
+    transform: translateX(-50%);
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/roboto/Roboto-Thin.woff)
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/roboto/Roboto-Light.woff)
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/roboto/Roboto-Regular.woff)
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/roboto/Roboto-Medium.woff)
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/roboto/Roboto-Bold.woff)
+}
+
+.font-weight-100 {
+    font-weight: 100;
+}
+
+.font-weight-200 {
+    font-weight: 200
+}
+
+.font-weight-300 {
+    font-weight: 300
+}
+
+.font-weight-400 {
+    font-weight: 400
+}
+
+.font-weight-500 {
+    font-weight: 500
+}
+
+.font-weight-700 {
+    font-weight: 700
+}
+
+.text-nowrap {
+    white-space: nowrap
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+    font-size: 13px;
+    background: #fbfcfd
+}
+
