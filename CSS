@@ -147,11 +147,11 @@ audio[controls],
 canvas,
 video {
     display: inline-block;
-    *display: inline;}
+    display: inline;}
 
 audio {
     display: none;
-    *zoom: 1;}
+    zoom: 1;}
 
 audio[controls] {
     display: inline-block;}
@@ -164,7 +164,7 @@ svg:not(:root) {
     overflow: hidden;}
 
 legend {
-    *margin-left: -7px; }
+    margin-left: -7px; }
 
 button,
 input, 
@@ -172,7 +172,7 @@ select,
 textarea {
     border-radius: 0;
     vertical-align: baseline;
-    *vertical-align: middle;}
+    vertical-align: middle;}
 
 button, 
 input[type="button"]
@@ -299,7 +299,7 @@ table {
                     display: block;
                     color: #fff;}
                 #galleryBackground .galleryUpPanel #galleryX:hover::before {
-                    color: #white;}
+                    color: white;}
             #galleryBackground .galleryUpPanel #galleryFullSize {
                 width: 80px;
                 padding: 20px 10px;
@@ -383,4 +383,534 @@ table {
                 transition: width 300ms ease-out, height 300ms ease-out, transform 300ms ease-in-out;
         overflow: hidden;
         visibility: collapse;}
-                
+        #galleryBackground .galleryImg > img {
+            opacity: 0;
+            -webkit-transition: opacity 300ms ease-out;
+                    transition: opacity 300ms ease-out;}
+        #galleryBackground .galleryImg::after {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: solid 5px transparent;
+            border-top: 5px solid #333;
+            border-bottom: 5px solid #333;
+            -webkit-animation: 1s infinite spin cubic-bezier(0.6, -0.28, 0.6, 1.26);
+                    animation: 1s infinite spin cubic-bezier(0.6, -0.28, 0.6, 1.26);
+            position: absolute;
+            top: calc(50% - 25px);
+        left: calc(50% - 25px);}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);}
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);}}
+        #galleryBackground .galleryImg.poziomo > img {
+            opacity: 1;}
+        #galleryBackground .galleryImg.poziomo::after {
+            content: none;}
+        #galleryBackground .galleryImg.pionowo > img {
+            opacity: 1;}
+        #galleryBackground .galleryImg.pionowo::after {
+            content: none;}
+        #galleryBackground .galleryImg.fromBack {
+            -webkit-transform: scale(1) translate(-50%, -50%);
+                -ms-transform: scale(1) translate(-50%, -50%);
+                    transform: scale(1) translate(-50%, -50%);
+            opacity: 1;
+            -webkit-animation: zoom 300ms ease-out;
+                    animation: zoom 300ms ease-out;
+            z-index: 20;
+            visibility: visible;}
+        #galleryBackground .galleryImg.toBack {
+            -webkit-transform: scale(0.5) translate(-50%, -50%);
+                -ms-transform: scale(0.5) translate(-50%, -50%);
+                    transform: scale(0.5) translate(-50%, -50%);
+            opacity: 1;
+            -webkit-animation: unzoom 300ms ease-out;
+                    animation: unzoom 300ms ease-out;}
+        #galleryBackground .galleryImg.toLeft {
+            margin-left: -100%;
+            opacity: 1;
+            -webkit-animation: goLeft 300ms ease-out;
+                    animation: goLeft 300ms ease-out;}
+        #galleryBackground .galleryImg.toRight {
+            margin-left: 100%;
+            opacity: 1;
+            -webkit-animation: goRight 300ms ease-in-out;
+                    animation: goRight 300ms ease-in-out;}
+        #galleryBackground .galleryImg.fromRight {
+            opacity: 1;
+            margin-left: 0%;
+            -webkit-animation: goFromRight 300ms ease-in-out;
+                    animation: goFromRight 300ms ease-in-out;
+            z-index: 20;
+            visibility: visible;}
+        #galleryBackground .galleryImg.fromLeft {
+            opacity: 1;
+            margin-left: 0%;
+            -webkit-animation: goFromLeft 300ms ease-in-out;
+                    animation: goFromLeft 300ms ease-in-out;
+            z-index: 20;
+            visibility: visible;}
+        #galleryBackground.visible {
+            display: block;
+            -webkit-animation: pokaz 500ms;
+                    animation: pokaz 500ms;}
+        #galleryBackground.hidden  {
+            display: block!important;
+            -webkit-animation: ukryj 500ms forwards;
+                    animation: ukryj 500ms forwards;}
+@-webkit-keyframes pokaz {
+    0% {
+        opacity: 0.0;}
+    100% {
+        opacity: 1.0;}}
+@-webkit-keyframes ukryj {
+    0% {
+        opacity: 1.0;
+        display: block;}
+    100% {
+        opacity: 0.0;
+        display: block;}}
+@keyframes ukryj {
+    0% {
+        opacity: 1.0;
+        display: block;}
+    100% {
+        opacity: 0.0;
+        display: block;}}
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(0.5);
+                transform: translate(-50%, -50%) scale(0.5);
+        visibility: visible;}
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+        visibility: visible;}}
+@keyframes zoom {
+    0%{
+        -webkit-transform: translate(-50%, -50%) scale(0.5);
+                transform: translate(-50%, -50%) scale(0.5);
+        visibility: visible;}
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+        visibility: visible; }}
+@-webkit-keyframes unzoom {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+        visibility: visible;}
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(0.5);
+                transform: translate(-50%, -50%) scale(0.5);
+        visibility: visible;}}
+@keyframes unzoom {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+        visibility: visible;}
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(0.5);
+                transform: translate(-50%, -50%) scale(0.5);
+        visibility: visible;}}
+@-webkit-keyframes go3DLeft {
+    0%{
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+                transform: translateZ(0px) rotateY(0deg);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(-90deg);
+                transform: translateZ(-500px) rotateY(-90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(-180deg);
+                transform: translateZ(0px) rotateY(-180deg);}}
+@keyframes go3DLeft {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+                transform: translateZ(0px) rotateY(0deg);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(-90deg);
+                transform: translateZ(-500px) rotateY(-90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(-180deg);
+                transform: translateZ(0px) rotateY(-180deg);}}
+@-webkit-keyframes go3DRight {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(0px);
+                transform: translateZ(0px) rotateY(0px);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(90deg);
+                transform: translateZ(-500px) rotateY(90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(180deg);
+                transform: translateZ(0px) rotateY(180deg);}}
+@keyframes go3DRight {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(0px);
+                transform: translateZ(0px) rotateY(0px);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(90deg);
+                transform: translateZ(-500px) rotate(90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(180deg);
+                transform: translateZ(0px) rotateY(180deg);}}
+@-webkit-keyframes go3DFromLeft {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(-180deg);
+                transform: translateZ(0px) rotateY(-180deg);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(-90deg);
+                transform: translateZ(-500px) rotateY(-90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+                transform: translateZ(0px) rotate(0deg);}}
+@keyframes go3DFromLeft {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(-180deg);
+                transform: translateZ(0px) rotateY(-180deg);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(-90deg);
+                transform: translateZ(-500px) rotateY(-90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+                transform: translateZ(0px) rotateY(0deg);}}
+@-webkit-keyframes go3DFormRight {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(180deg);
+                transform: translateZ(0px) rotateY(180deg);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(90deg);
+                transform: translateZ(-500px) rotateY(90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+                transform: translateZ(0px) rotateY(0deg);}}
+@keyframes go3DFromRight {
+    0% {
+        -webkit-transform: translateZ(0px) rotateY(180deg);
+                transform: translateZ(0px) rotateY(180deg);}
+    50% {
+        -webkit-transform: translateZ(-500px) rotateY(90deg);
+                transform: translateZ(-500px) rotateY(90deg);}
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+                transform: translateZ(0px) rotateY(0deg);}}
+@-webkit-keyframes goLeft {
+    0% {
+        margin-left: 0%;
+        opacity: 1;
+        visibility: visible;}
+    100% {
+        margin-left: -100%;
+        opacity: 0;
+        visibility: visible;}}
+@keyframes goLeft {
+    0% {
+        margin-left: 0%;
+        opacity: 1;
+        visibility: visible;}
+    100% {
+        margin-left: -100%;
+        opacity: 0;
+        visibility: visible;}}
+@-webkit-keyframes goRight {
+    0% {
+        margin-left: 0%;
+        visibility: visible;
+        opacity: 1;}
+    100% {
+        margin-left: 100%;
+        visibility: visible;
+        opacity: 0;}}
+@keyframes goRight {
+    0% {
+        margin-left: 0%;
+        visibility: visible;
+        opacity: 1;}
+    100% {
+        margin-left: 100%;
+        visibility: visible;
+        opacity: 0;}}
+@-webkit-keyframes goFromLeft {
+    0% {
+        margin-left: -100%;
+        visibility: visible;
+        opacity: 0;}
+    100% {
+        margin-left: 0%;
+        visibility: visible;
+        opacity: 1;}}
+@keyframes goFromLeft {
+    0% {
+        margin-left: -100%;
+        visibility: visible;
+        opacity: 0;}
+    100% {
+        margin-left: 0%;
+        visibility: visible;
+        opacity: 1;}}
+@-webkit-keyframes goFromRight {
+    0% {
+        margin-left: 100%;
+        opacity: 0;}
+    100% {
+        margin-left: 0%;
+        opacity: 1;}}
+@keyframes goFromRigh {
+    0% {
+        margin-left: 100%;
+        opacity: 0;}
+    100% {
+        margin-left: 0%;
+        opacity: 1;}}
+article table tbody tr:nth-child(odd) {
+    background: #e9edef;}
+article table thead > tr {
+    background: #c6d0d5;} 
+article table td {
+    padding: 6px;}
+.paginator {
+    display: block;
+    text-align: right;
+    position: relative;
+    margin: 0 1px;
+    padding: 0 6px;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 22px;}
+    .paginator * .active {
+        box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.3);}
+.paginator a:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);}
+    
+form.search {
+    font-weight: 500;
+    padding: 15px;}
+    form.search > * {
+        padding-bottom: 16px;}
+    form.search .main label {
+        padding: 4px;
+        display: block;}
+    form.search input {
+        width: 100%;}
+    form.search input, form.search select {
+        display: inline-block;
+        font-size: 15PX;
+        padding: 5px 16px;
+        box-sizing: border-box;
+        font-weight: 500;}
+    form.search .dates {
+        display: block;
+        width: 100%;
+        padding-bottom: 0;}
+        form.search .dates > * {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 16px 16px 0;}
+            form.search .dates > * > * {
+                display: inline-block;
+                vertical-align: middle;}
+                form.search .dates > * > * > label {
+                    padding-right: 8px;}
+                form.search .dates > * > * .date {
+                    display: table;}
+                    form.search .dates > * > * .date > * {
+                        display: table-cell;
+                        vertical-align: middle;}
+                        form.search .dates > * > * .date > * .input {
+                            background: white;
+                            border: 1px solid #cfcfcf;}
+                            form.search .dates > * > * .date > *.input input {
+                                border: none;
+                                max-width: 100%; }
+                              form.search .dates > * > * .date > *.input i {
+                                font-size: 18px;
+                                display: inline-block;
+                                font-style: normal;
+                                margin-left: -14px;
+                                cursor: pointer;
+                                color: black;
+                                opacity: 0.5; }
+                                form.search .dates > * > * .date > *.input i:hover {
+                                  opacity: 1; }
+                    form.search .dates .icon-calendar {
+                      font-size: 25px;
+                      opacity: 0.4; }
+                    form.search .dates input {
+                      text-align: right; }
+                  form.search .sort {
+                    display: table;
+                    width: 100%; }
+                    form.search .sort > * {
+                      display: table-cell;
+                      vertical-align: middle; }
+                    form.search .sort label {
+                      width: 133px; }
+                    form.search .sort select {
+                      width: 100%; }
+                  form.search button {
+                    border: none;
+                    text-align: center;
+                    line-height: 40px;
+                    padding: 0 10px;
+                    float: right;
+                    cursor: pointer;
+                    color: white; }
+                    form.search button:hover {
+                      box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3); }
+                  form.search::after {
+                    content: '';
+                    clear: both;
+                    display: block; }
+
+.searchTabHeader {
+    list-style: none;
+    padding: 0;}
+    .searchTabHeader li {
+        display: inline-block;
+        width: 31%;
+        min-width: 200px;
+        margin-right: 1%;
+        margin-left: 1%;
+        line-height: 22px;
+        cursor: pointer; }
+        .searchTabHeader li div {
+            display: table;}
+            .searchTabHeader li div > * {
+                display: table;
+                line-height: 50px; }
+            .searchTabHeader li div .name {
+                width: 100%;
+                text-align: center;
+                line-height: 1.2;
+                vertical-align: middle; }
+            .searchTabHeader li div .count {
+                width: 60px;
+                display: block;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;}
+
+.searchTabBody .col-lg-8 {
+    float: none;
+    width: auto;}
+.searchTabBody > * {
+    display: none;}
+    .searchTabBody > * h3 {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #364159;
+        color: #364150;}
+    .searchTabBody > * .open {
+        display: block;}
+
+.datepicker {
+    width: 175px;
+    margin-left: -175px;
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    font-weight: 400;
+    z-index: 10;}
+    .datepicker.open {
+        display: block;}
+    .datepicker .datepickerHead {
+        display: table;
+        width: 100%;}
+        .datepicker .datepickerHead > * {
+            cursor: pointer;
+            display: table-cell;
+            padding: 5px;
+            text-align: center;}
+            .datepicker .datepickerHead > *:hover {
+                background: #ccc; }
+    .datepicker table tr:hover {
+        background: #eee;}
+    .datepicker table tr td {
+        cursor: pointer;
+        padding: 5px;
+        text-align: center;
+        width: 12px;
+        height: 12x;
+        color: #aaa;}
+        .datepicker table tr td.activeMonth {
+            color: #000;}
+        .datepicker table tr td:hover {
+            background: #ccc;}
+.DhSelect {
+    position: relative;}
+    .DhSelect .DhSelect-label {
+        cursor: pointer;
+        padding: 9px 30px 9px 20px;
+        padding-right: 30px !important;
+        border: 1px solid silver;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;}
+        .DhSelect .DhSelect-label .DhSelect-text {
+            display: inline !important;  }
+        .DhSelect .DhSelect-label span.icon {
+            position: absolute;
+            display: block !important;
+            top: 50%;
+            right: 5px;
+            margin-top: -10px;
+            line-height: 1;
+            font-size: 20px; }
+    .DhSelect .DhSelect-list {
+        z-index: 10;
+        margin-top: -1px;
+        position: absolute;
+        background: #fff;
+        border: 1px solid;
+        width: 100%;
+        overflow: auto;}
+        .DhSelect .DhSelect-list.top {
+            bottom: 100%;
+            margin-bottom: -1px;}
+        .DhSelect .DhSelect-list > div {
+            cursor: pointer;
+            padding: 5px 10px;}
+
+table.statistics a {
+    color: inherit;
+    text-decoration: none;}
+    table.statistics a:hover {
+        text-decoration: underline;}
+
+.full-width {
+    width: 100%;}
+
+.clickable:hover, .clickable:focus {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.26);}
+.clickable:active {
+    box-shadow: none;}
+
+@media (max-width: 900px) {
+    #galleryBackground #galleryThumbinals {
+        display: none;}
+    #galleryBackground .galleryImg {
+        margin-top: 20px;}
+    #galleryBackground .galleryUpPanel #galleryDownloand {
+        width: 40px;
+        padding: 10px 0;}
+        #galleryBackground .galleryUpPanel #galleryDownloand::before {
+            font-size: 20px;}
+    #galleryBackground .galleryUpPanel #galleryFullSize {
+        width: 40px;
+        padding: 10px 0;}
+        #galleryBackgound .galleryUpPanel #galleryFullSize::before {
+            font-size: 20px;}
+    #galleryBackground .galleryUpPanel #galleryX {
+        width: 40px;
+        padding: 10px 0;}
+        #galleryBackground .galleryUpPanel #galleryX::before {
+            font-size: 20px;}
+    #galleryBackground .galleryUpPanel #galleryPrev::before {
+        font-size: 40px;
+        margin: -20px 0 0 0;}}
