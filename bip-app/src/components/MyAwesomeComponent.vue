@@ -6,13 +6,6 @@
     <p>Order total price: {{state.totalPrice}}</p>
     <p>Tax: {{state.tax}}</p>
   </div>
-  <!--<div>
-    <h1>Price: {{price}}$</h1>
-    <button @click="makeOrder">Make next order</button>
-    <p>Quantity: {{quantity}}</p>
-    <p>Order total price: {{totalPrice}}</p>
-    <p>Tax: {{tax}}</p>
-  </div>-->
 </template>
 
 <script>
